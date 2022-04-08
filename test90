@@ -1,1 +1,1 @@
-echo "test repo" 
+echo "test repo" > file7
