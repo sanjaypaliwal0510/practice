@@ -1,0 +1,21 @@
+pipeline {
+    agent any 
+    stages {
+        stage('pull') { 
+            steps {
+                git branch: 'main', credentialsId: 'admin', url: 'https://github.com/sanjaypaliwal0510/practice.git'
+            }
+        }
+        stage('Test') { 
+            steps {
+                 echo 'timepass'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'timepass'
+            }
+        }
+    }
+}
+
